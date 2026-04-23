@@ -1,0 +1,17 @@
+button{
+     text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 50px;
+  background: #444;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+button:hover{ 
+      transform: translateY(-3px); /* Tepaga biroz ko'tariladi */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #6200ea; /* Hover bo'lganda rang o'zgarishi */
+  color: white;
+}

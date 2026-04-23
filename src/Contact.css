@@ -1,0 +1,64 @@
+.contact-container {
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-title {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column; /* Elementlarni ustma-ust qo'yish */
+  align-items: center;
+  gap: 15px; /* Elementlar orasidagi masofa */
+}
+
+.contact-item {
+  background-color: rgba(255, 255, 255, 0.1); /* Shaffof fon */
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  transition: 0.3s; /* Silliq effekt */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-item:hover {
+  background-color: #00d2ff; /* Sichqoncha kelganda rang o'zgarishi */
+  transform: translateY(-3px); /* Ozgina yuqoriga ko'tariladi */
+}
+
+.contact-item span {
+  margin-right: 10px;
+}
+
+.contact-footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+a {
+text-decoration: none;
+color: azure;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+
+}
+.a{
+   text-decoration: none;
+color: azure;
+font-family: 'Courier New', Courier, monospace;
+font-weight: bold;
+ 
+}
