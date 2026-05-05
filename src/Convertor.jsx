@@ -30,7 +30,7 @@ function CurrencyConventor(){
         const calc = (amout*fromRate)/toRate;
         setResult(calc.toFixed(2));
      }
-    },[amout.fromCurrency,toCurrency,rates]);
+    },[amout, fromCurrency,toCurrency,rates]);
 
     return(
         <div style={{padding:'30px',maxWidth:'500px',margin:'0 auto',background:'#1f84b6',borderRadius:'15px',boxShadow:'0 4px 8px rgba(0,0,0,0.1'}}>
@@ -54,7 +54,7 @@ function CurrencyConventor(){
                 </div>
             <div style={{flex:'1'}}>
                     <label>Ga:</label>
-                    <select value={toCurrency}onChange={(e)=>setToCurrency(e.target.value)}
+                    <select value={toCurrency} onChange={(e)=>setToCurrency(e.target.value)}
                         style={{width:'100%',padding:'10px',borderRadius:'5px'}}>
                             {rates.map(r=> <option key={r.Ccy}value={r.Ccy}>{r.Ccy}-{r.CcyNm_uz}</option>)}
                         </select>
