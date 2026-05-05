@@ -4,6 +4,8 @@ import './App.css'; // CSS faylni ulashni unutmang!
 import ContactMen from './Contact.jsx'
 import QuoteApp from './QuoteApp';
 import Men from './men';
+import Appi from './api.jsx';
+import CurrencyConventor from './Convertor.jsx';
 
 
 
@@ -19,16 +21,19 @@ function App() {
         <Link to="/about" className="nav-link">Men haqimda </Link>
         <Link to="/contact" className="nav-link">Aloqa</Link>
         <Link to="/hikmatlar" className="nav-link">Quote</Link>
+        <Link to="/api" className="nav-link">api</Link>
+        <Link to="/Convertor" className="nav-link">Pul</Link>
       </nav>
 
-      
+
       <div className="content-area">
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/about" element={<Men/>} />
+          <Route path="/about" element={<Men />} />
           <Route path="/contact" element={<ContactMen />} />
-          <Route path="/hikmatlar" element={<QuoteApp/>} />
-
+          <Route path="/hikmatlar" element={<QuoteApp />} />
+          <Route path="/api" element={<Appi />} />
+          <Route path="/Convertor" element={<CurrencyConventor />} />
         </Routes>
       </div>
     </BrowserRouter>
