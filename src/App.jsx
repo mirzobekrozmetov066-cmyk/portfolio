@@ -7,7 +7,7 @@ import Men from './men';
 import Appi from './api.jsx';
 import CurrencyConventor from './Convertor.jsx';
 
-
+import MovieSearch from './kino.jsx';
 
 function App() {
   const Home = () => <h2 className="page-title">Men haqimda</h2>;
@@ -23,6 +23,7 @@ function App() {
         <Link to="/hikmatlar" className="nav-link">Quote</Link>
         <Link to="/api" className="nav-link">api</Link>
         <Link to="/Convertor" className="nav-link">Pul</Link>
+        <Link to="/kino" className="nav-link">Kino</Link>
       </nav>
 
 
@@ -34,6 +35,8 @@ function App() {
           <Route path="/hikmatlar" element={<QuoteApp />} />
           <Route path="/api" element={<Appi />} />
           <Route path="/Convertor" element={<CurrencyConventor />} />
+               <Route path="/kino" element={<MovieSearch />} />
+          
         </Routes>
       </div>
     </BrowserRouter>
